@@ -206,16 +206,6 @@ dsh plugin --profile web add github:wei-806206088/dsh-skin
 
 </details>
 
-## 🔖 推荐 Topics
-
-上传到 GitHub 后，建议给仓库添加以下 Topics：
-
-```text
-deepseek-harness, dsh, dsh-plugin, dsh-plugins, plugin-pack, dsh-plugin-pack-web, deepseek, ai-plugins, profile-web, dsh-profile
-```
-
-> 注：GitHub Topics 只支持英文/数字/连字符，因此“插件包”不能作为 GitHub Topic；它可以作为 README 和仓库描述中的中文关键词。
-
 ## 🛠️ 自研兼容插件
 
 为了尽可能提升本插件包在不同 DSH 环境下的兼容性，我加入了以下自研插件：
@@ -226,7 +216,39 @@ deepseek-harness, dsh, dsh-plugin, dsh-plugins, plugin-pack, dsh-plugin-pack-web
 2. **dsh-topbar-manager**（兼容插件 2）  
    https://github.com/baihejiangnan/dsh-topbar-manager
 
-> 说明：以上 1 和 2 均为我自研的兼容性插件；它们用于帮助插件包在更多 DeepSeek Harness 版本/环境中稳定加载与使用。
+### 为什么需要兼容插件？
+
+DeepSeek Harness 的插件社区发展很快，不同插件可能由不同作者维护，对 DSH 版本、UI 结构、设置面板和顶部工具栏的假设也不完全一致。如果直接把大量社区插件组合进同一个 `profile/web`，很容易出现以下问题：
+
+- **设置入口分散**：每个插件各自往设置页添加入口，用户很难找到和管理配置。
+- **顶部按钮冲突**：多个插件同时向顶栏注册按钮，容易重叠、遮挡、顺序混乱。
+- **版本适配不一致**：插件 A 适配了新版本，插件 B 还停留在旧接口，组合后可能出现加载失败或样式错乱。
+- **排障成本高**：出问题时难以判断是哪个插件、哪个配置、哪个版本导致的。
+
+### 这两个插件分别优化了什么？
+
+#### 1. dsh-settings-organizer
+
+- 把散落在 DSH 设置页里的插件配置进行**分层、归类、导航化**。
+- 让用户在一个统一、可搜索的设置结构中管理插件，而不是在不同插件各自的位置里翻找。
+- 降低多插件环境下的配置认知负担，也减少“装了但不知道去哪设置”的体验断裂。
+
+#### 2. dsh-topbar-manager
+
+- 统一管理多个插件向 DSH Web 顶栏注册的按钮。
+- 提供**检查、开关、排序/归类**能力，避免顶栏按钮过多、互相遮挡或顺序混乱。
+- 让 UI 在插件数量增加后仍然保持整洁、可控，减少视觉冲突和误点。
+
+### 为什么必须要兼容插件？
+
+因为“能安装”和“能一起稳定工作”是两回事。这个插件包的目标不是简单罗列 30 个插件，而是让它们组合成一个**开箱即用、少冲突、好维护**的 DSH 环境。兼容插件相当于插件包的“粘合层”：
+
+- 统一设置体验
+- 统一顶栏秩序
+- 缓冲不同插件对 DSH 版本的接口差异
+- 让后续新增/移除插件时更安全、更容易回滚
+
+所以，`dsh-settings-organizer` 和 `dsh-topbar-manager` 是这套插件包中负责“兼容与体验收敛”的关键部分。
 
 ## 🤝 致谢
 
