@@ -211,8 +211,10 @@ dsh plugin --profile web add github:wei-806206088/dsh-skin
 上传到 GitHub 后，建议给仓库添加以下 Topics：
 
 ```text
-deepseek-harness, dsh, dsh-plugin, dsh-plugins, plugin-pack, dsh-plugin-pack-web, 插件包, deepseek, ai-plugins, profile-web, dsh-profile
+deepseek-harness, dsh, dsh-plugin, dsh-plugins, plugin-pack, dsh-plugin-pack-web, deepseek, ai-plugins, profile-web, dsh-profile
 ```
+
+> 注：GitHub Topics 只支持英文/数字/连字符，因此“插件包”不能作为 GitHub Topic；它可以作为 README 和仓库描述中的中文关键词。
 
 ## 🛠️ 自研兼容插件
 
