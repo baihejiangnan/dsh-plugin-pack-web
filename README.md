@@ -65,6 +65,12 @@ dsh plugin --profile web add github:wei-806206088/dsh-skin
 > dshpm install <包名> --profile web
 > ```
 
+## 机器可读插件包清单
+
+本仓库同时提供 [`dsh-plugin-pack.json`](dsh-plugin-pack.json)，供插件包市场和启动器直接读取。清单包含 28 个可安装插件；README 中提到的两个 `@deepseek-ai` 项目属于 DSH 官方内置插件，因此没有重复放入安装清单。
+
+清单使用 DSH Plugin Pack Schema v1，市场应将本仓库声明为 `json-manifest` 格式，并读取 `dsh-plugin-pack.json`。README 中的命令仍保留，方便用户手动复刻和核对安装来源。
+
 ## 📋 完整复刻提示词
 
 可以直接把下面的提示词发给别人，或粘贴给一台全新的 DeepSeek Harness 助手。

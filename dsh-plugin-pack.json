@@ -1,0 +1,197 @@
+{
+  "schemaVersion": 1,
+  "id": "dsh-plugin-pack-web",
+  "name": "DSH Plugin Pack Web",
+  "version": "1.0.0",
+  "description": "A structured install manifest for the DSH profile/web plugin collection. Official built-in plugins are intentionally omitted.",
+  "license": "MIT",
+  "plugins": [
+    {
+      "id": "dsh-session-context-menu",
+      "name": "DSH Session Context Menu",
+      "kind": "plugin",
+      "spec": "github:baihejiangnan/dsh-session-context-menu",
+      "repository": "https://github.com/baihejiangnan/dsh-session-context-menu"
+    },
+    {
+      "id": "zat-dsh-engine",
+      "name": "ZAT DSH Engine",
+      "kind": "plugin",
+      "spec": "github:mishibeikejie/zat-dsh-engine",
+      "repository": "https://github.com/mishibeikejie/zat-dsh-engine"
+    },
+    {
+      "id": "modlens",
+      "name": "ModLens",
+      "kind": "plugin",
+      "spec": "@liustack/modlens"
+    },
+    {
+      "id": "billion-context-dsh",
+      "name": "Billion Context DSH",
+      "kind": "plugin",
+      "spec": "billion-context-dsh"
+    },
+    {
+      "id": "dsh-better-sidebar",
+      "name": "DSH Better Sidebar",
+      "kind": "plugin",
+      "spec": "dsh-better-sidebar"
+    },
+    {
+      "id": "dsh-checkpoint-diff",
+      "name": "DSH Checkpoint Diff",
+      "kind": "plugin",
+      "spec": "dsh-checkpoint-diff"
+    },
+    {
+      "id": "dsh-extension-hub",
+      "name": "DSH Extension Hub",
+      "kind": "plugin",
+      "spec": "dsh-extension-hub"
+    },
+    {
+      "id": "dsh-tdai-memory",
+      "name": "DSH TDAI Memory",
+      "kind": "plugin",
+      "spec": "dsh-tdai-memory"
+    },
+    {
+      "id": "dsh-web-mobile-fix",
+      "name": "DSH Web Mobile Fix",
+      "kind": "plugin",
+      "spec": "dsh-web-mobile-fix"
+    },
+    {
+      "id": "dsh-what-changed",
+      "name": "DSH What Changed",
+      "kind": "plugin",
+      "spec": "dsh-what-changed"
+    },
+    {
+      "id": "dsh-navbar",
+      "name": "DSH Navbar",
+      "kind": "plugin",
+      "spec": "github:vlln/dsh-navbar",
+      "repository": "https://github.com/vlln/dsh-navbar"
+    },
+    {
+      "id": "dsh-balance-tide",
+      "name": "DSH Balance Tide",
+      "kind": "plugin",
+      "spec": "github:huanyuLv/dsh-balance-tide",
+      "repository": "https://github.com/huanyuLv/dsh-balance-tide"
+    },
+    {
+      "id": "dsh-offpeak",
+      "name": "DSH OffPeak",
+      "kind": "plugin",
+      "spec": "github:christophersmith2737-commits/OffPeak",
+      "repository": "https://github.com/christophersmith2737-commits/OffPeak"
+    },
+    {
+      "id": "dsh-session-manager",
+      "name": "DSH Session Manager",
+      "kind": "plugin",
+      "spec": "github:dream12347/dsh-session-manager",
+      "repository": "https://github.com/dream12347/dsh-session-manager"
+    },
+    {
+      "id": "dsh-undo-savepoint",
+      "name": "DSH Undo Savepoint",
+      "kind": "plugin",
+      "spec": "github:lire1131/dsh-undo-plugin",
+      "repository": "https://github.com/lire1131/dsh-undo-plugin"
+    },
+    {
+      "id": "dsh-topbar-manager",
+      "name": "DSH Topbar Manager",
+      "kind": "plugin",
+      "spec": "github:baihejiangnan/dsh-topbar-manager",
+      "repository": "https://github.com/baihejiangnan/dsh-topbar-manager"
+    },
+    {
+      "id": "dsh-side-session",
+      "name": "DSH Side Session",
+      "kind": "plugin",
+      "spec": "github:hzhz314159/dsh-side-session",
+      "repository": "https://github.com/hzhz314159/dsh-side-session"
+    },
+    {
+      "id": "dsh-at-file",
+      "name": "DSH At File",
+      "kind": "plugin",
+      "spec": "https://github.com/omdsh-dev/dsh-at-file/archive/refs/tags/v0.6.3.tar.gz",
+      "repository": "https://github.com/omdsh-dev/dsh-at-file"
+    },
+    {
+      "id": "dsh-genui",
+      "name": "DSH GenUI",
+      "kind": "plugin",
+      "spec": "github:omdsh-dev/dsh-genui",
+      "repository": "https://github.com/omdsh-dev/dsh-genui"
+    },
+    {
+      "id": "dsh-automation",
+      "name": "DSH Automation",
+      "kind": "plugin",
+      "spec": "github:titanwings/dsh-automation",
+      "repository": "https://github.com/titanwings/dsh-automation"
+    },
+    {
+      "id": "dsh-notification",
+      "name": "DSH Notification",
+      "kind": "plugin",
+      "spec": "github:omdsh-dev/dsh-notification",
+      "repository": "https://github.com/omdsh-dev/dsh-notification"
+    },
+    {
+      "id": "dsh-status-rotator",
+      "name": "DSH Status Rotator",
+      "kind": "plugin",
+      "spec": "dsh-status-rotator"
+    },
+    {
+      "id": "dsh-auto-collapse",
+      "name": "DSH Auto Collapse",
+      "kind": "plugin",
+      "spec": "github:a179-sanae/dsh-auto-collapse#main",
+      "repository": "https://github.com/a179-sanae/dsh-auto-collapse"
+    },
+    {
+      "id": "dsh-plugin-guard",
+      "name": "DSH Plugin Guard",
+      "kind": "plugin",
+      "spec": "github:lxzy-7/dsh-plugin-guard",
+      "repository": "https://github.com/lxzy-7/dsh-plugin-guard"
+    },
+    {
+      "id": "dsh-web-plugin-manager",
+      "name": "DSH Web Plugin Manager",
+      "kind": "plugin",
+      "spec": "github:LX2000WASD/dsh-web-plugin-manager",
+      "repository": "https://github.com/LX2000WASD/dsh-web-plugin-manager"
+    },
+    {
+      "id": "dsh-plugin-healthcheck",
+      "name": "DSH Plugin Healthcheck",
+      "kind": "plugin",
+      "spec": "github:chenw2759-wq/dsh-plugin-healthcheck",
+      "repository": "https://github.com/chenw2759-wq/dsh-plugin-healthcheck"
+    },
+    {
+      "id": "dsh-settings-organizer",
+      "name": "DSH Settings Organizer",
+      "kind": "plugin",
+      "spec": "https://codeload.github.com/baihejiangnan/dsh-settings-organizer/tar.gz/refs/tags/v1.1.0",
+      "repository": "https://github.com/baihejiangnan/dsh-settings-organizer"
+    },
+    {
+      "id": "dsh-skin",
+      "name": "DSH Skin",
+      "kind": "plugin",
+      "spec": "github:wei-806206088/dsh-skin",
+      "repository": "https://github.com/wei-806206088/dsh-skin"
+    }
+  ]
+}
