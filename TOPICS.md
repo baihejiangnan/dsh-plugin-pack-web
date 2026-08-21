@@ -12,5 +12,6 @@
 - ai-plugins
 - profile-web
 - dsh-profile
+- dsh-better-sidebar
 
 > 注：GitHub Topics 只支持英文/数字/连字符，中文“插件包”不能作为 GitHub Topic；建议放在 README 和仓库描述中作为中文关键词。

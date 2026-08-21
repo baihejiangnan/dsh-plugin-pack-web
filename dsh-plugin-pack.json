@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "dsh-plugin-pack-web",
   "name": "DSH Web 插件包",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "用于 DSH profile/web 插件环境的结构化安装清单。官方内置插件不重复收录。",
   "license": "MIT",
   "plugins": [
@@ -36,7 +36,17 @@
       "id": "dsh-better-sidebar",
       "name": "DSH 更好侧边栏",
       "kind": "plugin",
-      "spec": "dsh-better-sidebar"
+      "spec": "dsh-better-sidebar",
+      "repository": "https://github.com/omdsh-dev/DSH-better-sidebar"
+    },
+    {
+      "id": "dsh-sidebar-qa",
+      "name": "DSH 侧边栏追问",
+      "kind": "extension",
+      "spec": "dsh-sidebar-qa",
+      "repository": "https://github.com/ChenRuoT/dsh-sidebar-qa",
+      "description": "通过 Better Sidebar 注册追问与追问记录页面的第三方扩展。",
+      "requires": ["dsh-better-sidebar"]
     },
     {
       "id": "dsh-checkpoint-rewind",
