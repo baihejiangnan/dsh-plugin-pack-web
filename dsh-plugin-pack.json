@@ -39,6 +39,12 @@
       "spec": "dsh-better-sidebar"
     },
     {
+      "id": "dsh-checkpoint-rewind",
+      "name": "DSH 检查点回退",
+      "kind": "plugin",
+      "spec": "dsh-checkpoint-rewind"
+    },
+    {
       "id": "dsh-checkpoint-diff",
       "name": "DSH 检查点差异",
       "kind": "plugin",
